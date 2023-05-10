@@ -1,17 +1,17 @@
-import React from 'react';
+import React from 'react'; //SON IMPORTANTES PARA EL VIRTUAL DOM
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+//import { ParagraphLink } from './components/paragraphLink/ParagraphLink';
+//import ParagraphLink from './components/paragraphLink/ParagraphLink';
+import { App } from './App';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import P from './components/paragraphLink/ParagraphLink';
+
+const root = ReactDOM.createRoot(document.getElementById('root')); //objeto que se pasa a root
 root.render(
   <React.StrictMode>
-    <App />
+    {/*<p href="http">texto</p> */}
+    <App/>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
